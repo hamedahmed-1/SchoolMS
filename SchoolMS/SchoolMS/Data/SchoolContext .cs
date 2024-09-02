@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using SchoolMS.Models;
 
 namespace SchoolMS.Data
 {
-    public class SchoolContext : DbContext
+    public class SchoolContext : IdentityDbContext<ApplicationUser>
     {
         public SchoolContext(DbContextOptions<SchoolContext> options) : base(options) { }
 

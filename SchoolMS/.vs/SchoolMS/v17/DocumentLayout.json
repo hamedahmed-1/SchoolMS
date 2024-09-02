@@ -1,86 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\SchoolMS\\",
+  "WorkspaceRootPath": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\schoolms\\schoolms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\schoolms\\schoolms\\models\\fee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\models\\fee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\schoolms\\schoolms\\models\\installment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\models\\installment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\schoolms\\schoolms\\dto\\gradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\dto\\gradedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\schoolms\\schoolms\\mappings\\studentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\mappings\\studentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\schoolms\\schoolms\\controllers\\gradescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\controllers\\gradescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\schoolms\\schoolms\\dto\\educationalstagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\dto\\educationalstagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\schoolms\\schoolms\\models\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\models\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\schoolms\\schoolms\\models\\educationalstage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\models\\educationalstage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\schoolms\\schoolms\\controllers\\educationalstagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\controllers\\educationalstagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\schoolms\\schoolms\\data\\schoolcontext .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\data\\schoolcontext .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\schoolms\\schoolms\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\schoolms\\schoolms\\services\\feeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\services\\feeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\schoolms\\schoolms\\dto\\installmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\dto\\installmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\schoolms\\schoolms\\dto\\feedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\dto\\feedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\schoolms\\schoolms\\dto\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\dto\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\dto\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\schoolms\\schoolms\\controllers\\installmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\controllers\\installmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\dto\\loginuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\dto\\loginuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\schoolms\\schoolms\\controllers\\feescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\controllers\\feescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\controllers\\educationalstagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\controllers\\educationalstagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\schoolms\\schoolms\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\schoolms\\schoolms\\schoolms.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\schoolms.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\dto\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\dto\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,245 +46,94 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EducationalStage.cs",
-              "DocumentMoniker": "D:\\SchoolMS\\SchoolMS\\Models\\EducationalStage.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Models\\EducationalStage.cs",
-              "ToolTip": "D:\\SchoolMS\\SchoolMS\\Models\\EducationalStage.cs",
-              "RelativeToolTip": "SchoolMS\\Models\\EducationalStage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "StudentDTO.cs",
+              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\DTO\\StudentDTO.cs",
+              "RelativeDocumentMoniker": "SchoolMS\\DTO\\StudentDTO.cs",
+              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\DTO\\StudentDTO.cs",
+              "RelativeToolTip": "SchoolMS\\DTO\\StudentDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T08:56:15.072Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GradesController.cs",
-              "DocumentMoniker": "D:\\SchoolMS\\SchoolMS\\Controllers\\GradesController.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Controllers\\GradesController.cs",
-              "ToolTip": "D:\\SchoolMS\\SchoolMS\\Controllers\\GradesController.cs",
-              "RelativeToolTip": "SchoolMS\\Controllers\\GradesController.cs",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAqwJ0AAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T19:04:17.375Z"
+              "WhenOpened": "2024-09-01T20:10:10.086Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "GradeDto.cs",
-              "DocumentMoniker": "D:\\SchoolMS\\SchoolMS\\DTO\\GradeDto.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\DTO\\GradeDto.cs",
-              "ToolTip": "D:\\SchoolMS\\SchoolMS\\DTO\\GradeDto.cs",
-              "RelativeToolTip": "SchoolMS\\DTO\\GradeDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAzAAAA",
+              "Title": "EducationalStagesController.cs",
+              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\EducationalStagesController.cs",
+              "RelativeDocumentMoniker": "SchoolMS\\Controllers\\EducationalStagesController.cs",
+              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\EducationalStagesController.cs",
+              "RelativeToolTip": "SchoolMS\\Controllers\\EducationalStagesController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAYwBoAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T20:41:06.029Z"
+              "WhenOpened": "2024-09-01T19:40:09.697Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FeeDto.cs",
-              "DocumentMoniker": "D:\\SchoolMS\\SchoolMS\\DTO\\FeeDto.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\DTO\\FeeDto.cs",
-              "ToolTip": "D:\\SchoolMS\\SchoolMS\\DTO\\FeeDto.cs",
-              "RelativeToolTip": "SchoolMS\\DTO\\FeeDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T20:41:28.144Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StudentProfile.cs",
-              "DocumentMoniker": "D:\\SchoolMS\\SchoolMS\\Mappings\\StudentProfile.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Mappings\\StudentProfile.cs",
-              "ToolTip": "D:\\SchoolMS\\SchoolMS\\Mappings\\StudentProfile.cs",
-              "RelativeToolTip": "SchoolMS\\Mappings\\StudentProfile.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAQwD8AAABYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T21:08:56.673Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Grade.cs",
-              "DocumentMoniker": "D:\\SchoolMS\\SchoolMS\\Models\\Grade.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Models\\Grade.cs",
-              "ToolTip": "D:\\SchoolMS\\SchoolMS\\Models\\Grade.cs",
-              "RelativeToolTip": "SchoolMS\\Models\\Grade.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T18:40:37.519Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Student.cs",
-              "DocumentMoniker": "D:\\SchoolMS\\SchoolMS\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Models\\Student.cs",
-              "ToolTip": "D:\\SchoolMS\\SchoolMS\\Models\\Student.cs",
-              "RelativeToolTip": "SchoolMS\\Models\\Student.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T18:39:57.449Z"
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\appsettings.json",
+              "RelativeDocumentMoniker": "SchoolMS\\appsettings.json",
+              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\appsettings.json",
+              "RelativeToolTip": "SchoolMS\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-31T19:13:31.369Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Installment.cs",
-              "DocumentMoniker": "D:\\SchoolMS\\SchoolMS\\Models\\Installment.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Models\\Installment.cs",
-              "ToolTip": "D:\\SchoolMS\\SchoolMS\\Models\\Installment.cs",
-              "RelativeToolTip": "SchoolMS\\Models\\Installment.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Title": "LoginUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\DTO\\LoginUserDTO.cs",
+              "RelativeDocumentMoniker": "SchoolMS\\DTO\\LoginUserDTO.cs",
+              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\DTO\\LoginUserDTO.cs",
+              "RelativeToolTip": "SchoolMS\\DTO\\LoginUserDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T18:41:29.065Z"
+              "WhenOpened": "2024-08-31T18:35:18.423Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\SchoolMS\\SchoolMS\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Program.cs",
               "RelativeDocumentMoniker": "SchoolMS\\Program.cs",
-              "ToolTip": "D:\\SchoolMS\\SchoolMS\\Program.cs",
+              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Program.cs",
               "RelativeToolTip": "SchoolMS\\Program.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAABMAAAADAAAA",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAHYAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T18:48:49.22Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EducationalStagesController.cs",
-              "DocumentMoniker": "D:\\SchoolMS\\SchoolMS\\Controllers\\EducationalStagesController.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Controllers\\EducationalStagesController.cs",
-              "ToolTip": "D:\\SchoolMS\\SchoolMS\\Controllers\\EducationalStagesController.cs",
-              "RelativeToolTip": "SchoolMS\\Controllers\\EducationalStagesController.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAuwIUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T09:45:35.611Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Fee.cs",
-              "DocumentMoniker": "D:\\SchoolMS\\SchoolMS\\Models\\Fee.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Models\\Fee.cs",
-              "ToolTip": "D:\\SchoolMS\\SchoolMS\\Models\\Fee.cs",
-              "RelativeToolTip": "SchoolMS\\Models\\Fee.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T18:40:57.815Z",
+              "WhenOpened": "2024-08-31T18:19:57.415Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "EducationalStageDto.cs",
-              "DocumentMoniker": "D:\\SchoolMS\\SchoolMS\\DTO\\EducationalStageDto.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\DTO\\EducationalStageDto.cs",
-              "ToolTip": "D:\\SchoolMS\\SchoolMS\\DTO\\EducationalStageDto.cs",
-              "RelativeToolTip": "SchoolMS\\DTO\\EducationalStageDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Title": "RegisterUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\DTO\\RegisterUserDTO.cs",
+              "RelativeDocumentMoniker": "SchoolMS\\DTO\\RegisterUserDTO.cs",
+              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\DTO\\RegisterUserDTO.cs",
+              "RelativeToolTip": "SchoolMS\\DTO\\RegisterUserDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T09:48:51.901Z"
+              "WhenOpened": "2024-08-31T17:43:44.03Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SchoolContext .cs",
-              "DocumentMoniker": "D:\\SchoolMS\\SchoolMS\\Data\\SchoolContext .cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Data\\SchoolContext .cs",
-              "ToolTip": "D:\\SchoolMS\\SchoolMS\\Data\\SchoolContext .cs",
-              "RelativeToolTip": "SchoolMS\\Data\\SchoolContext .cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAiwC8AAAAFAAAA",
+              "DocumentIndex": 4,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "SchoolMS\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "SchoolMS\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAD0AAAAAzczMzMwmwEYAAABjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T18:42:51.219Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "InstallmentDTO.cs",
-              "DocumentMoniker": "D:\\SchoolMS\\SchoolMS\\DTO\\InstallmentDTO.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\DTO\\InstallmentDTO.cs",
-              "ToolTip": "D:\\SchoolMS\\SchoolMS\\DTO\\InstallmentDTO.cs",
-              "RelativeToolTip": "SchoolMS\\DTO\\InstallmentDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T18:43:23.625Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "InstallmentsController.cs",
-              "DocumentMoniker": "D:\\SchoolMS\\SchoolMS\\Controllers\\InstallmentsController.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Controllers\\InstallmentsController.cs",
-              "ToolTip": "D:\\SchoolMS\\SchoolMS\\Controllers\\InstallmentsController.cs",
-              "RelativeToolTip": "SchoolMS\\Controllers\\InstallmentsController.cs",
-              "ViewState": "AQIAAGEAAAAAAAAAAAAmwH8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T19:44:27.93Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "StudentsController.cs",
-              "DocumentMoniker": "D:\\SchoolMS\\SchoolMS\\Controllers\\StudentsController.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Controllers\\StudentsController.cs",
-              "ToolTip": "D:\\SchoolMS\\SchoolMS\\Controllers\\StudentsController.cs",
-              "RelativeToolTip": "SchoolMS\\Controllers\\StudentsController.cs",
-              "ViewState": "AQIAAGkAAAAAAAAAAAAiwIYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T18:50:45.395Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "FeesController.cs",
-              "DocumentMoniker": "D:\\SchoolMS\\SchoolMS\\Controllers\\FeesController.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Controllers\\FeesController.cs",
-              "ToolTip": "D:\\SchoolMS\\SchoolMS\\Controllers\\FeesController.cs",
-              "RelativeToolTip": "SchoolMS\\Controllers\\FeesController.cs",
-              "ViewState": "AQIAAHUAAAAAAAAAAAAiwJIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T19:11:18.818Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "StudentDTO.cs",
-              "DocumentMoniker": "D:\\SchoolMS\\SchoolMS\\DTO\\StudentDTO.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\DTO\\StudentDTO.cs",
-              "ToolTip": "D:\\SchoolMS\\SchoolMS\\DTO\\StudentDTO.cs",
-              "RelativeToolTip": "SchoolMS\\DTO\\StudentDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T20:30:37.195Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FeeService.cs",
-              "DocumentMoniker": "D:\\SchoolMS\\SchoolMS\\Services\\FeeService.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Services\\FeeService.cs",
-              "ToolTip": "D:\\SchoolMS\\SchoolMS\\Services\\FeeService.cs",
-              "RelativeToolTip": "SchoolMS\\Services\\FeeService.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAmwB0AAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T19:36:27.919Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "SchoolMS.http",
-              "DocumentMoniker": "D:\\SchoolMS\\SchoolMS\\SchoolMS.http",
-              "RelativeDocumentMoniker": "SchoolMS\\SchoolMS.http",
-              "ToolTip": "D:\\SchoolMS\\SchoolMS\\SchoolMS.http",
-              "RelativeToolTip": "SchoolMS\\SchoolMS.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-08-12T18:48:52.666Z"
+              "WhenOpened": "2024-08-31T17:31:06.971Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +24,7 @@ namespace SchoolMS.Controllers
 
         // GET: api/EducationalStages
         [HttpGet]
+        [Authorize] 
         public async Task<ActionResult<IEnumerable<EducationalStageDto>>> GetEducationalStages()
         {
             var educationalStages = await _context.EducationalStages
