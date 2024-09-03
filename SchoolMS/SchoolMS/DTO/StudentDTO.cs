@@ -8,5 +8,7 @@ namespace SchoolMS.DTO
         public string Name { get; set; }
         public DateTime DateOfBirth { get; set; }
         public int GradeId { get; set; } // Should be set by the client
+        public FeeDto Fee { get; set; }
+
     }
 }

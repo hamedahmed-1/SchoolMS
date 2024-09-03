@@ -9,12 +9,19 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Newtonsoft.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddAutoMapper(typeof(StudentProfile));
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+builder.Services.AddControllers()
+    .AddNewtonsoftJson(options =>
+    {
+        options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+    });
 
 
 // Add services to the container.

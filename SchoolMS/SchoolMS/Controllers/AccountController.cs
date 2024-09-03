@@ -1,13 +1,16 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using SchoolMS.Data;
 using SchoolMS.DTO;
 using SchoolMS.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.Json;
 using static System.Net.WebRequestMethods;
 
 namespace SchoolMS.Controllers
@@ -16,14 +19,67 @@ namespace SchoolMS.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
+        private readonly SchoolContext _context;
         private readonly UserManager<ApplicationUser> userManager;
         private readonly IConfiguration configuration;
 
-        public AccountController(UserManager<ApplicationUser> userManager, IConfiguration configuration)
+        [HttpGet("users")]
+        public async Task<IActionResult> GetAllUsers(string searchTerm = null,
+            string sortBy = "UserName",  // Sort by UserName by default
+            string sortDirection = "asc", // Sort ascending by default
+            int pageNumber = 1,
+            int pageSize = 10)
+        {
+            var query = userManager.Users
+                .Select(u => new UserDTO
+                {
+                    UserName = u.UserName,
+                })
+                .AsQueryable();
+
+            // Searching
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                query = query.Where(u => u.UserName.Contains(searchTerm));
+            }
+
+            // Sorting
+            if (sortDirection.ToLower() == "desc")
+            {
+                query = query.OrderByDescending(u => u.UserName);
+            }
+            else
+            {
+                query = query.OrderBy(u => u.UserName);
+            }
+
+            var totalItems = await query.CountAsync();
+            var users = await query
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            // Add pagination metadata
+            var paginationMetadata = new
+            {
+                totalCount = totalItems,
+                pageSize,
+                currentPage = pageNumber,
+                totalPages = (int)Math.Ceiling(totalItems / (double)pageSize)
+            };
+
+            Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(paginationMetadata));
+
+            return Ok(users);
+        }
+
+        public AccountController(UserManager<ApplicationUser> userManager, IConfiguration configuration, SchoolContext context)
         {
             this.userManager = userManager;
             this.configuration = configuration;
+            _context = context;
         }
+
         [HttpPost("register")]
         public async Task<IActionResult> Registration(RegisterUserDTO userDTO)
         {

@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using SchoolMS.Data;
 using SchoolMS.DTO;
 using SchoolMS.Models;
+using System.Text.Json;
 
 namespace SchoolMS.Controllers
 {
@@ -23,13 +24,59 @@ namespace SchoolMS.Controllers
 
         // Get all grades
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<GradeDto>>> GetGrades()
+        public async Task<ActionResult<IEnumerable<GradeDto>>> GetGrades(
+            string searchTerm = null,
+            int? educationalStageId = null, // Filter by EducationalStage ID
+            string sortBy = "Name",         // Default sorting by Name
+            string sortDirection = "asc",   // Default sorting direction is ascending
+            int pageNumber = 1,
+            int pageSize = 10)
         {
-            var grades = await _context.Grades
+            var query = _context.Grades
                 .Include(g => g.EducationalStage)
+                .AsQueryable();
+
+            // Searching
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                query = query.Where(g => g.Name.Contains(searchTerm));
+            }
+
+            // Filtering by Educational Stage ID
+            if (educationalStageId.HasValue)
+            {
+                query = query.Where(g => g.EducationalStageId == educationalStageId.Value);
+            }
+
+            // Sorting by Name
+            if (sortDirection.ToLower() == "desc")
+            {
+                query = query.OrderByDescending(g => g.Name);
+            }
+            else
+            {
+                query = query.OrderBy(g => g.Name);
+            }
+
+            // Pagination
+            var totalItems = await query.CountAsync();
+            var grades = await query
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
                 .ToListAsync();
 
             var gradeDtos = _mapper.Map<IEnumerable<GradeDto>>(grades);
+
+            // Add pagination metadata
+            var paginationMetadata = new
+            {
+                totalCount = totalItems,
+                pageSize,
+                currentPage = pageNumber,
+                totalPages = (int)Math.Ceiling(totalItems / (double)pageSize)
+            };
+
+            Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(paginationMetadata));
 
             return Ok(gradeDtos);
         }

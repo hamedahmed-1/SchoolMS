@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using SchoolMS.Data;
 using SchoolMS.DTO;
 using SchoolMS.Models;
+using System.Text.Json;
 
 namespace SchoolMS.Controllers
 {
@@ -23,11 +24,64 @@ namespace SchoolMS.Controllers
 
         // Get all fees
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<FeeDto>>> GetFees()
+        public async Task<ActionResult<IEnumerable<FeeDto>>> GetFees(
+            string searchTerm = null,
+            decimal? minTotalAmount = null, // Filter by minimum total amount
+            decimal? maxTotalAmount = null, // Filter by maximum total amount
+            string sortBy = "TotalAmount",  // Default sorting by TotalAmount
+            string sortDirection = "asc",   // Default sorting direction is ascending
+            int pageNumber = 1,
+            int pageSize = 10)
         {
-            var fees = await _context.Fees.ToListAsync();
+            var query = _context.Fees.AsQueryable();
+
+            // Searching
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                query = query.Where(f => f.Student.Name.Contains(searchTerm)); // Assuming there is a Description field
+            }
+
+            // Filtering by Total Amount
+            if (minTotalAmount.HasValue)
+            {
+                query = query.Where(f => f.TotalAmount >= minTotalAmount.Value);
+            }
+
+            if (maxTotalAmount.HasValue)
+            {
+                query = query.Where(f => f.TotalAmount <= maxTotalAmount.Value);
+            }
+
+            // Sorting by Total Amount
+            if (sortDirection.ToLower() == "desc")
+            {
+                query = query.OrderByDescending(f => f.TotalAmount);
+            }
+            else
+            {
+                query = query.OrderBy(f => f.TotalAmount);
+            }
+
+            // Pagination
+            var totalItems = await query.CountAsync();
+            var fees = await query
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
 
             var feeDtos = _mapper.Map<IEnumerable<FeeDto>>(fees);
+
+            // Add pagination metadata
+            var paginationMetadata = new
+            {
+                totalCount = totalItems,
+                pageSize,
+                currentPage = pageNumber,
+                totalPages = (int)Math.Ceiling(totalItems / (double)pageSize)
+            };
+
+            Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(paginationMetadata));
+
             return Ok(feeDtos);
         }
 

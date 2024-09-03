@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using SchoolMS.Data;
 using SchoolMS.DTO;
 using SchoolMS.Models;
+using System.Text.Json;
 
 namespace SchoolMS.Controllers
 {
@@ -24,14 +25,52 @@ namespace SchoolMS.Controllers
 
         // GET: api/EducationalStages
         [HttpGet]
-        [Authorize] 
-        public async Task<ActionResult<IEnumerable<EducationalStageDto>>> GetEducationalStages()
+        public async Task<ActionResult<IEnumerable<EducationalStageDto>>> GetEducationalStages(
+            string searchTerm = null,
+            string sortBy = "Name",         // Default sorting by Name
+            string sortDirection = "asc",   // Default sorting direction is ascending
+            int pageNumber = 1,
+            int pageSize = 10)
         {
-            var educationalStages = await _context.EducationalStages
+            var query = _context.EducationalStages
                 .Include(e => e.Grades)
+                .AsQueryable();
+
+            // Searching
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                query = query.Where(e => e.Name.Contains(searchTerm));
+            }
+
+            // Sorting
+            if (sortDirection.ToLower() == "desc")
+            {
+                query = query.OrderByDescending(e => e.Name);
+            }
+            else
+            {
+                query = query.OrderBy(e => e.Name);
+            }
+
+            // Pagination
+            var totalItems = await query.CountAsync();
+            var educationalStages = await query
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
                 .ToListAsync();
 
             var educationalStageDtos = _mapper.Map<IEnumerable<EducationalStageDto>>(educationalStages);
+
+            // Add pagination metadata
+            var paginationMetadata = new
+            {
+                totalCount = totalItems,
+                pageSize,
+                currentPage = pageNumber,
+                totalPages = (int)Math.Ceiling(totalItems / (double)pageSize)
+            };
+
+            Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(paginationMetadata));
 
             return Ok(educationalStageDtos);
         }

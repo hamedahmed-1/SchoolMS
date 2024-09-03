@@ -56,7 +56,9 @@ namespace SchoolMS.Mappings
 
             // Map Student to StudentDTO and vice versa
             CreateMap<Student, StudentDTO>()
-                .ForMember(dest => dest.GradeId, opt => opt.MapFrom(src => src.Grade.Id));
+                .ForMember(dest => dest.GradeId, opt => opt.MapFrom(src => src.Grade.Id))
+                .ForMember(dest => dest.Fee, opt => opt.MapFrom(src => src.Fees.FirstOrDefault()));
+            CreateMap<Fee, FeeDto>();
             CreateMap<StudentDTO, Student>();
 
             // Map Grade to GradeDto and vice versa
