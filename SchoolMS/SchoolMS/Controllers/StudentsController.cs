@@ -172,6 +172,9 @@ namespace SchoolMS.Controllers
             existingStudent.Name = studentDto.Name;
             existingStudent.DateOfBirth = studentDto.DateOfBirth;
             existingStudent.GradeId = studentDto.GradeId;
+            existingStudent.ParentsName = studentDto.ParentsName;
+            existingStudent.PhoneNumber = studentDto.PhoneNumber;
+            existingStudent.Address = studentDto.Address;
 
             var existingFee = existingStudent.Fees.FirstOrDefault();
 
@@ -183,7 +186,7 @@ namespace SchoolMS.Controllers
                 existingFee.RemainingBalance = studentDto.Fee.TotalAmount;
 
                 // Update installments if the number of installments has changed
-                if (existingFee.Installments.Count != studentDto.Fee.NumberOfInstallments)
+                if (existingFee.Installments.Count != studentDto.Fee.NumberOfInstallments.CompareTo(id))
                 {
                     // Clear existing installments
                     _context.Installments.RemoveRange(existingFee.Installments);

@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Newtonsoft.Json;
+using SchoolMS.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -110,6 +111,10 @@ builder.Services.AddSwaggerGen(c =>
     }
     });
 });
+
+builder.Services.AddTransient<IWhatsAppService, WhatsAppService>();
+
+builder.Services.Configure<WhatsAppSettings>(builder.Configuration.GetSection(nameof(WhatsAppSettings)));
 
 
 var app = builder.Build();

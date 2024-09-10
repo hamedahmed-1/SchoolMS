@@ -70,11 +70,12 @@ namespace SchoolMS.Controllers
                 return BadRequest("Insufficient amount paid. The full installment amount must be paid.");
             }
 
-            installment.IsPaid = true;
-            installment.PaymentDate = DateTime.UtcNow;
-
             var fee = installment.Fee;
             fee.RemainingBalance -= installment.Amount;
+
+            installment.IsPaid = true;
+            installment.PaymentDate = DateTime.UtcNow;
+            installment.RemainingBalance = fee.RemainingBalance;
 
             await _context.SaveChangesAsync();
 

@@ -139,7 +139,8 @@ namespace SchoolMS.Controllers
                         return Ok(new
                         {
                             token= new JwtSecurityTokenHandler().WriteToken(mytoken),
-                            expiration = mytoken.ValidTo
+                            expiration = mytoken.ValidTo,
+                            username = user.UserName
                         });
                     }
                     return Unauthorized();
@@ -147,6 +148,15 @@ namespace SchoolMS.Controllers
                 return Unauthorized();
             }
             return Unauthorized();
+        }
+
+        [HttpPost("logout")]
+        public IActionResult Logout()
+        {
+            // There is no actual token invalidation server-side since JWT is stateless.
+            // Clients should handle logout by deleting the token on their side (e.g., from localStorage).
+
+            return Ok(new { message = "Logged out successfully." });
         }
     }
 }

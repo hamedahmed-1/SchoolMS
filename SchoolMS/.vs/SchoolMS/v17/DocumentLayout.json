@@ -3,36 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\dto\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\dto\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\dto\\feedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\dto\\feedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\controllers\\gradescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\controllers\\gradescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\services\\iwhatsappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\services\\iwhatsappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\controllers\\feescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\controllers\\feescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\models\\whatsapprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\models\\whatsapprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\controllers\\educationalstagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\controllers\\educationalstagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\dto\\sendotpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\dto\\sendotpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\migrations\\20240905140846_add parents details .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\migrations\\20240905140846_add parents details .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\models\\whatsappcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\models\\whatsappcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\services\\whatsappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\services\\whatsappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\dto\\installmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\dto\\installmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\dto\\sendmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\dto\\sendmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\models\\template.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\models\\template.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\models\\language.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\models\\language.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,40 +74,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20240905140846_add Parents Details .cs",
-              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Migrations\\20240905140846_add Parents Details .cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Migrations\\20240905140846_add Parents Details .cs",
-              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Migrations\\20240905140846_add Parents Details .cs",
-              "RelativeToolTip": "SchoolMS\\Migrations\\20240905140846_add Parents Details .cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAgAAAA",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Program.cs",
+              "RelativeDocumentMoniker": "SchoolMS\\Program.cs",
+              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Program.cs",
+              "RelativeToolTip": "SchoolMS\\Program.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAjwCcAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T14:08:47.406Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Models\\Student.cs",
-              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Models\\Student.cs",
-              "RelativeToolTip": "SchoolMS\\Models\\Student.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T14:01:22.699Z",
+              "WhenOpened": "2024-09-10T19:34:40.695Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FeeDto.cs",
-              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\DTO\\FeeDto.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\DTO\\FeeDto.cs",
-              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\DTO\\FeeDto.cs",
-              "RelativeToolTip": "SchoolMS\\DTO\\FeeDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "SchoolMS\\Controllers\\StudentsController.cs",
+              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "SchoolMS\\Controllers\\StudentsController.cs",
+              "ViewState": "AQIAAK8AAAAAAAAAAAAjwL8AAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T12:05:48.641Z"
+              "WhenOpened": "2024-09-10T19:32:02.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InstallmentDTO.cs",
+              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\DTO\\InstallmentDTO.cs",
+              "RelativeDocumentMoniker": "SchoolMS\\DTO\\InstallmentDTO.cs",
+              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\DTO\\InstallmentDTO.cs",
+              "RelativeToolTip": "SchoolMS\\DTO\\InstallmentDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T22:08:25.798Z"
             },
             {
               "$type": "Document",
@@ -93,57 +118,133 @@
               "RelativeDocumentMoniker": "SchoolMS\\DTO\\StudentDTO.cs",
               "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\DTO\\StudentDTO.cs",
               "RelativeToolTip": "SchoolMS\\DTO\\StudentDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAhAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAD4vxQAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T12:05:40.704Z"
+              "WhenOpened": "2024-09-09T22:07:37.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WhatsAppComponent.cs",
+              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Models\\WhatsAppComponent.cs",
+              "RelativeDocumentMoniker": "SchoolMS\\Models\\WhatsAppComponent.cs",
+              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Models\\WhatsAppComponent.cs",
+              "RelativeToolTip": "SchoolMS\\Models\\WhatsAppComponent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T22:01:42.643Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "GradesController.cs",
-              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\GradesController.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Controllers\\GradesController.cs",
-              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\GradesController.cs",
-              "RelativeToolTip": "SchoolMS\\Controllers\\GradesController.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAAwE4AAAA2AAAA",
+              "Title": "IWhatsAppService.cs",
+              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Services\\IWhatsAppService.cs",
+              "RelativeDocumentMoniker": "SchoolMS\\Services\\IWhatsAppService.cs",
+              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Services\\IWhatsAppService.cs",
+              "RelativeToolTip": "SchoolMS\\Services\\IWhatsAppService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T20:00:43.324Z"
+              "WhenOpened": "2024-09-09T21:22:08.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "SchoolMS\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "SchoolMS\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwDkAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T19:36:53.996Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "FeesController.cs",
-              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\FeesController.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Controllers\\FeesController.cs",
-              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\FeesController.cs",
-              "RelativeToolTip": "SchoolMS\\Controllers\\FeesController.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAASwCgAAAA3AAAA",
+              "Title": "WhatsAppRequest.cs",
+              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Models\\WhatsAppRequest.cs",
+              "RelativeDocumentMoniker": "SchoolMS\\Models\\WhatsAppRequest.cs",
+              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Models\\WhatsAppRequest.cs",
+              "RelativeToolTip": "SchoolMS\\Models\\WhatsAppRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T19:52:20.217Z"
+              "WhenOpened": "2024-09-09T19:48:52.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\appsettings.json",
+              "RelativeDocumentMoniker": "SchoolMS\\appsettings.json",
+              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\appsettings.json",
+              "RelativeToolTip": "SchoolMS\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-09T19:24:39.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WhatsAppService.cs",
+              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Services\\WhatsAppService.cs",
+              "RelativeDocumentMoniker": "SchoolMS\\Services\\WhatsAppService.cs",
+              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Services\\WhatsAppService.cs",
+              "RelativeToolTip": "SchoolMS\\Services\\WhatsAppService.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:24:33.031Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "EducationalStagesController.cs",
-              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\EducationalStagesController.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Controllers\\EducationalStagesController.cs",
-              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\EducationalStagesController.cs",
-              "RelativeToolTip": "SchoolMS\\Controllers\\EducationalStagesController.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAiwEgAAAA9AAAA",
+              "Title": "SendOTPDto.cs",
+              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\DTO\\SendOTPDto.cs",
+              "RelativeDocumentMoniker": "SchoolMS\\DTO\\SendOTPDto.cs",
+              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\DTO\\SendOTPDto.cs",
+              "RelativeToolTip": "SchoolMS\\DTO\\SendOTPDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T19:48:25.667Z"
+              "WhenOpened": "2024-09-09T20:38:31.281Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StudentsController.cs",
-              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\StudentsController.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Controllers\\StudentsController.cs",
-              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\StudentsController.cs",
-              "RelativeToolTip": "SchoolMS\\Controllers\\StudentsController.cs",
-              "ViewState": "AQIAAG0AAAAAAAAAAAAkwJ0AAAANAAAA",
+              "DocumentIndex": 11,
+              "Title": "SendMessageDto.cs",
+              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\DTO\\SendMessageDto.cs",
+              "RelativeDocumentMoniker": "SchoolMS\\DTO\\SendMessageDto.cs",
+              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\DTO\\SendMessageDto.cs",
+              "RelativeToolTip": "SchoolMS\\DTO\\SendMessageDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T19:42:08.473Z"
+              "WhenOpened": "2024-09-09T19:39:06.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Template.cs",
+              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Models\\Template.cs",
+              "RelativeDocumentMoniker": "SchoolMS\\Models\\Template.cs",
+              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Models\\Template.cs",
+              "RelativeToolTip": "SchoolMS\\Models\\Template.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T19:52:11.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Language.cs",
+              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Models\\Language.cs",
+              "RelativeDocumentMoniker": "SchoolMS\\Models\\Language.cs",
+              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Models\\Language.cs",
+              "RelativeToolTip": "SchoolMS\\Models\\Language.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T19:53:40.821Z"
             }
           ]
         }
