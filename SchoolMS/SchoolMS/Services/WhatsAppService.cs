@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
 using SchoolMS.DTO;
 using SchoolMS.Models;
 using SchoolMS.Settings;
@@ -15,7 +16,7 @@ namespace SchoolMS.Services
         {
             _settings = settings.Value;
         }
-        public async Task<bool> SendMessage(string mobile, string language, string template, List<WhatsAppComponent>? components = null)
+        public async Task<bool> SendMessage(string mobile, string template, string language, List<WhatsAppComponent>? components = null)
         {
             using HttpClient httpClient = new HttpClient();
 
@@ -28,17 +29,30 @@ namespace SchoolMS.Services
                 template = new Template
                 {
                     name = template,
-                    language = new Language { code = language }
+                    language = new Language { code = language },
+                    components = components
                 }
             };
 
-            if (components is not null) 
+            var jsonBody = JsonConvert.SerializeObject(body, Formatting.Indented);
+            Console.WriteLine($"Request Payload: {jsonBody}");
+
+            if (components is not null)
             {
                 body.template.components = components;
             }
 
+
             HttpResponseMessage response =
                 await httpClient.PostAsJsonAsync(new Uri(_settings.ApiUrl), body);
+
+            string responseContent = await response.Content.ReadAsStringAsync();
+            Console.WriteLine($"Response Status: {response.StatusCode}");
+            Console.WriteLine($"Response Content: {responseContent}");
+
+
+            //Console.WriteLine($"Response Status: {response.StatusCode}");
+            //Console.WriteLine($"Response Body: {await response.Content.ReadAsStringAsync()}");
 
             return response.IsSuccessStatusCode;
         }

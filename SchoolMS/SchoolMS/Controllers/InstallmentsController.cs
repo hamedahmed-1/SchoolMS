@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using SchoolMS.Data;
 using SchoolMS.DTO;
 using SchoolMS.Models;
+using SchoolMS.Services;
 
 namespace SchoolMS.Controllers
 {
@@ -13,11 +14,13 @@ namespace SchoolMS.Controllers
     public class InstallmentsController : ControllerBase
     {
         private readonly SchoolContext _context;
+        private readonly IWhatsAppService _whatsAppService;
         private readonly IMapper _mapper;
-        public InstallmentsController(SchoolContext context, IMapper mapper)
+        public InstallmentsController(SchoolContext context, IMapper mapper, IWhatsAppService whatsAppService)
         {
             _context = context;
             _mapper = mapper;
+            _whatsAppService = whatsAppService;
         }
 
         // Get all installments for a specific fee
@@ -53,7 +56,7 @@ namespace SchoolMS.Controllers
         [HttpPost("pay")]
         public async Task<IActionResult> PayInstallment(int installmentId, decimal amountPaid)
         {
-            var installment = await _context.Installments.Include(i => i.Fee).FirstOrDefaultAsync(i => i.Id == installmentId);
+            var installment = await _context.Installments.Include(i => i.Fee).ThenInclude(f => f.Student).FirstOrDefaultAsync(i => i.Id == installmentId);
 
             if (installment == null)
             {
@@ -72,14 +75,46 @@ namespace SchoolMS.Controllers
 
             var fee = installment.Fee;
             fee.RemainingBalance -= installment.Amount;
-
             installment.IsPaid = true;
             installment.PaymentDate = DateTime.UtcNow;
             installment.RemainingBalance = fee.RemainingBalance;
 
             await _context.SaveChangesAsync();
 
-            // Logic to send a WhatsApp message can be added here
+            // Send OTP automatically after payment
+            var sendOTPDto = new SendOTPDto
+            {
+                Name = fee.Student.ParentsName,  // Assuming Fee is linked to Student and Student has ParentsName
+                Mobile = fee.Student.PhoneNumber, // Assuming Student has PhoneNumber
+                Amount = installment.Amount.ToString(),
+                RemainingAmount = installment.RemainingBalance.ToString()
+            };
+
+            var language = Request.Headers["language"].ToString();
+            if (string.IsNullOrEmpty(language))
+            {
+                language = "ar"; 
+            }
+            var components = new List<WhatsAppComponent>
+    {
+        new WhatsAppComponent
+        {
+            type = "body",
+            parameters = new List<TextMessageParameter>
+            {
+                new TextMessageParameter { type = "text", text = sendOTPDto.Name },
+                new TextMessageParameter { type = "text", text = sendOTPDto.Amount },
+                new TextMessageParameter { type = "text", text = sendOTPDto.RemainingAmount }
+            }
+        }
+    };
+
+            var result = await _whatsAppService.SendMessage(sendOTPDto.Mobile, "send_payment", language, components);
+
+            if (!result)
+            {
+                throw new Exception("Something went wrong while sending the WhatsApp message.");
+            }
 
             return Ok(new { message = "Installment paid successfully.", RemainingBalance = fee.RemainingBalance });
         }

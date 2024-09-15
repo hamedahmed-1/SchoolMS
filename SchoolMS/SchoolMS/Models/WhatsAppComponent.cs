@@ -3,6 +3,6 @@
     public class WhatsAppComponent
     {
         public string type { get; set; }
-        public List<object> parameters { get; set; }
+        public List<TextMessageParameter> parameters { get; set; }
     }
 }

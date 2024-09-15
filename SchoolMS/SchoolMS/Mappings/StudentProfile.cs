@@ -93,7 +93,15 @@ namespace SchoolMS.Mappings
 
             CreateMap<EducationalStage, EducationalStageDto>();
             CreateMap<EducationalStageDto, EducationalStage>();
-            
+
+            CreateMap<SendOTPDto, StudentDTO>()
+            .ForMember(dest => dest.ParentsName, opt => opt.MapFrom(src => src.Name))
+            .ForMember(dest => dest.PhoneNumber, opt => opt.MapFrom(src => src.Mobile));
+
+            // Map SendOTPDto to InstallmentDTO
+            CreateMap<SendOTPDto, InstallmentDTO>()
+                .ForMember(dest => dest.AmountPaid, opt => opt.MapFrom(src => decimal.Parse(src.Amount)))
+                .ForMember(dest => dest.RemainingBalance, opt => opt.MapFrom(src => decimal.Parse(src.RemainingAmount)));
         }
     }
 }
