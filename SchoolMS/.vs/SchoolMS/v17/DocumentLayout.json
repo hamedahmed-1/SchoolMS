@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\",
+  "WorkspaceRootPath": "D:\\My Projects\\ourSchoolMgSys\\SchoolMS\\SchoolMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\my projects\\ourschoolmgsys\\schoolms\\schoolms\\schoolms\\controllers\\installmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\controllers\\installmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|c:\\users\\uis\\schoolms\\schoolms\\schoolms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\my projects\\ourschoolmgsys\\schoolms\\schoolms\\schoolms\\controllers\\feescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\controllers\\feescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\appsettings.json",
-              "RelativeDocumentMoniker": "SchoolMS\\appsettings.json",
-              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\appsettings.json",
-              "RelativeToolTip": "SchoolMS\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-04T21:10:08.484Z",
+              "Title": "InstallmentsController.cs",
+              "DocumentMoniker": "D:\\My Projects\\ourSchoolMgSys\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\InstallmentsController.cs",
+              "RelativeDocumentMoniker": "SchoolMS\\Controllers\\InstallmentsController.cs",
+              "ToolTip": "D:\\My Projects\\ourSchoolMgSys\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\InstallmentsController.cs",
+              "RelativeToolTip": "SchoolMS\\Controllers\\InstallmentsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYBAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T09:16:01.043Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Program.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Program.cs",
-              "ToolTip": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\Program.cs",
-              "RelativeToolTip": "SchoolMS\\Program.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAAwGwAAAAKAAAA",
+              "Title": "FeesController.cs",
+              "DocumentMoniker": "D:\\My Projects\\ourSchoolMgSys\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\FeesController.cs",
+              "RelativeDocumentMoniker": "SchoolMS\\Controllers\\FeesController.cs",
+              "ToolTip": "D:\\My Projects\\ourSchoolMgSys\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\FeesController.cs",
+              "RelativeToolTip": "SchoolMS\\Controllers\\FeesController.cs",
+              "ViewState": "AQIAAJwAAAAAAAAAAAAowIwAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T11:25:44.48Z",
+              "WhenOpened": "2024-10-06T08:53:25.113Z",
               "EditorCaption": ""
             }
           ]

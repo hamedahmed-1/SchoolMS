@@ -4936,11 +4936,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\SchoolMS.csproj",
+      "projectUniqueName": "D:\\My Projects\\ourSchoolMgSys\\SchoolMS\\SchoolMS\\SchoolMS\\SchoolMS.csproj",
       "projectName": "SchoolMS",
-      "projectPath": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\SchoolMS.csproj",
+      "projectPath": "D:\\My Projects\\ourSchoolMgSys\\SchoolMS\\SchoolMS\\SchoolMS\\SchoolMS.csproj",
       "packagesPath": "C:\\Users\\UIS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\obj\\",
+      "outputPath": "D:\\My Projects\\ourSchoolMgSys\\SchoolMS\\SchoolMS\\SchoolMS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages"

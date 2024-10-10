@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mrN/9bIvNDQ=",
+  "dgSpecHash": "rxuds9tl5WY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\UIS\\SchoolMS\\SchoolMS\\SchoolMS\\SchoolMS.csproj",
+  "projectFilePath": "D:\\My Projects\\ourSchoolMgSys\\SchoolMS\\SchoolMS\\SchoolMS\\SchoolMS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UIS\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\UIS\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

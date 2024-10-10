@@ -56,27 +56,141 @@ namespace SchoolMS.Controllers
         [HttpPost("pay")]
         public async Task<IActionResult> PayInstallment(int installmentId, decimal amountPaid)
         {
-            var installment = await _context.Installments.Include(i => i.Fee).ThenInclude(f => f.Student).FirstOrDefaultAsync(i => i.Id == installmentId);
+            //var installment = await _context.Installments.Include(i => i.Fee).ThenInclude(f => f.Student).FirstOrDefaultAsync(i => i.Id == installmentId);
+
+            //if (installment == null)
+            //{
+            //    return NotFound($"Installment with ID {installmentId} not found.");
+            //}
+
+            //if (installment.IsPaid)
+            //{
+            //    return BadRequest("This installment has already been paid.");
+            //}
+
+            //if (amountPaid < installment.Amount)
+            //{
+            //    return BadRequest("Insufficient amount paid. The full installment amount must be paid.");
+            //}
+
+            //var fee = installment.Fee;
+            //fee.RemainingBalance -= installment.Amount;
+            //installment.IsPaid = true;
+            //installment.PaymentDate = DateTime.UtcNow;
+            //installment.RemainingBalance = fee.RemainingBalance;
+
+            //await _context.SaveChangesAsync();
+
+            var installment = await _context.Installments
+                .Include(i => i.Fee)
+                .ThenInclude(f => f.Student)
+                .FirstOrDefaultAsync(i => i.Id == installmentId);
 
             if (installment == null)
             {
                 return NotFound($"Installment with ID {installmentId} not found.");
             }
 
-            if (installment.IsPaid)
-            {
-                return BadRequest("This installment has already been paid.");
-            }
-
-            if (amountPaid < installment.Amount)
-            {
-                return BadRequest("Insufficient amount paid. The full installment amount must be paid.");
-            }
-
             var fee = installment.Fee;
-            fee.RemainingBalance -= installment.Amount;
-            installment.IsPaid = true;
-            installment.PaymentDate = DateTime.UtcNow;
+
+            // Check if the amount paid is less than or equal to the remaining balance
+            if (amountPaid <= 0 || amountPaid > fee.RemainingBalance)
+            {
+                return BadRequest("Invalid payment amount.");
+            }
+
+            // Apply payment to the current installment
+            decimal originalAmountPaid = amountPaid; // Keep track of the actual amount the user paid
+            decimal remainingToPay = amountPaid;
+            decimal originalInstallmentAmount = installment.Amount;
+
+            //if (amountPaid >= installment.Amount)
+            //{
+            //    installment.IsPaid = true;
+            //    installment.PaymentDate = DateTime.UtcNow;
+            //    amountPaid -= installment.Amount; // Subtract the installment amount from the payment
+            //    fee.RemainingBalance -= originalInstallmentAmount;
+            //}
+            //else
+            //{
+            //    // Partial payment logic for the installment
+            //    installment.Amount -= amountPaid; // Deduct the amount paid from the current installment amount
+            //    fee.RemainingBalance -= amountPaid; // Deduct the amount paid from the remaining balance
+            //    amountPaid = 0; // All of the paid amount has been applied to this installment
+            //}
+
+            //// If there's extra money left, apply it to the next installments
+            //var nextInstallments = await _context.Installments
+            //    .Where(i => i.FeeId == fee.Id && !i.IsPaid)
+            //    .OrderBy(i => i.PaymentDate)
+            //    .ToListAsync();
+
+            //foreach (var nextInstallment in nextInstallments)
+            //{
+            //    if (amountPaid <= 0) break;
+
+            //    if (amountPaid >= nextInstallment.Amount)
+            //    {
+            //        nextInstallment.IsPaid = true;
+            //        nextInstallment.PaymentDate = DateTime.UtcNow;
+            //        amountPaid -= nextInstallment.Amount; // Deduct the installment amount from the remaining payment
+            //        fee.RemainingBalance -= nextInstallment.Amount; // Deduct from the remaining balance
+            //    }
+            //    else
+            //    {
+            //        nextInstallment.Amount -= amountPaid;
+            //        fee.RemainingBalance -= amountPaid; // Deduct from the remaining balance
+            //        amountPaid = 0; // All of the paid amount has been applied
+            //    }
+            //}
+
+            // Apply payment to the current installment
+            if (remainingToPay >= installment.Amount)
+            {
+                // Pay off the current installment
+                remainingToPay -= installment.Amount;
+                installment.IsPaid = true;
+                installment.PaymentDate = DateTime.UtcNow;
+                installment.Amount = 0; // Fully paid installment has no remaining amount
+            }
+            else
+            {
+                // Partial payment for the current installment
+                installment.Amount -= remainingToPay; // Deduct from the current installment
+                remainingToPay = 0; // No more money left to apply
+            }
+
+            // Apply remaining payment to future installments if any amount is still left
+            if (remainingToPay > 0)
+            {
+                var nextInstallments = await _context.Installments
+                    .Where(i => i.FeeId == fee.Id && !i.IsPaid)
+                    .OrderBy(i => i.PaymentDate)
+                    .ToListAsync();
+
+                foreach (var nextInstallment in nextInstallments)
+                {
+                    if (remainingToPay <= 0) break; // Stop if there is no more amount to apply
+
+                    if (remainingToPay >= nextInstallment.Amount)
+                    {
+                        // Fully pay the next installment
+                        remainingToPay -= nextInstallment.Amount;
+                        nextInstallment.IsPaid = true;
+                        nextInstallment.PaymentDate = DateTime.UtcNow;
+                        nextInstallment.Amount = 0; // Fully paid installment
+                    }
+                    else
+                    {
+                        // Partial payment for the next installment
+                        nextInstallment.Amount -= remainingToPay;
+                        remainingToPay = 0; // All paid, no remaining amount left
+                    }
+                }
+            }
+
+            // Update the remaining balance in the fee
+            fee.RemainingBalance -= amountPaid;
             installment.RemainingBalance = fee.RemainingBalance;
 
             await _context.SaveChangesAsync();
@@ -86,7 +200,8 @@ namespace SchoolMS.Controllers
             {
                 Name = fee.Student.ParentsName,  // Assuming Fee is linked to Student and Student has ParentsName
                 Mobile = fee.Student.PhoneNumber, // Assuming Student has PhoneNumber
-                Amount = installment.Amount.ToString(),
+                //Amount = installment.Amount.ToString(),
+                Amount = originalAmountPaid.ToString(),
                 RemainingAmount = installment.RemainingBalance.ToString()
             };
 
@@ -96,18 +211,18 @@ namespace SchoolMS.Controllers
                 language = "ar"; 
             }
             var components = new List<WhatsAppComponent>
-    {
-        new WhatsAppComponent
-        {
-            type = "body",
-            parameters = new List<TextMessageParameter>
             {
-                new TextMessageParameter { type = "text", text = sendOTPDto.Name },
-                new TextMessageParameter { type = "text", text = sendOTPDto.Amount },
-                new TextMessageParameter { type = "text", text = sendOTPDto.RemainingAmount }
-            }
-        }
-    };
+                new WhatsAppComponent
+                {
+                    type = "body",
+                    parameters = new List<TextMessageParameter>
+                    {
+                        new TextMessageParameter { type = "text", text = sendOTPDto.Name },
+                        new TextMessageParameter { type = "text", text = sendOTPDto.Amount },
+                        new TextMessageParameter { type = "text", text = sendOTPDto.RemainingAmount }
+                    }
+                }
+            };
 
             var result = await _whatsAppService.SendMessage(sendOTPDto.Mobile, "send_payment", language, components);
 
