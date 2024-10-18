@@ -159,9 +159,7 @@ namespace SchoolMS.Controllers
 
             // Check if the student exists in the database
             var existingStudent = await _context.Students
-                .Include(s => s.Fees)
-                .ThenInclude(f => f.Installments).
-                FirstOrDefaultAsync(s => s.Id == id);
+                .FirstOrDefaultAsync(s => s.Id == id);
 
             if (existingStudent == null)
             {
@@ -176,38 +174,38 @@ namespace SchoolMS.Controllers
             existingStudent.PhoneNumber = studentDto.PhoneNumber;
             existingStudent.Address = studentDto.Address;
 
-            var existingFee = existingStudent.Fees.FirstOrDefault();
+            //var existingFee = existingStudent.Fees.FirstOrDefault();
 
-            if (existingFee != null)
-            {
-                existingFee.TotalAmount = studentDto.Fee.TotalAmount;
-                existingFee.NumberOfInstallments = studentDto.Fee.NumberOfInstallments;
-                existingFee.AmountPerInstallment = studentDto.Fee.TotalAmount / studentDto.Fee.NumberOfInstallments;
-                existingFee.RemainingBalance = studentDto.Fee.TotalAmount;
+            //if (existingFee != null)
+            //{
+            //    existingFee.TotalAmount = studentDto.Fee.TotalAmount;
+            //    existingFee.NumberOfInstallments = studentDto.Fee.NumberOfInstallments;
+            //    existingFee.AmountPerInstallment = studentDto.Fee.TotalAmount / studentDto.Fee.NumberOfInstallments;
+            //    existingFee.RemainingBalance = studentDto.Fee.TotalAmount;
 
-                // Update installments if the number of installments has changed
-                if (existingFee.Installments.Count != studentDto.Fee.NumberOfInstallments.CompareTo(id))
-                {
-                    // Clear existing installments
-                    _context.Installments.RemoveRange(existingFee.Installments);
+            //    // Update installments if the number of installments has changed
+            //    if (existingFee.Installments.Count != studentDto.Fee.NumberOfInstallments.CompareTo(id))
+            //    {
+            //        // Clear existing installments
+            //        _context.Installments.RemoveRange(existingFee.Installments);
 
-                    // Add new installments
-                    for (int i = 0; i < existingFee.NumberOfInstallments; i++)
-                    {
-                        var installment = new Installment
-                        {
-                            FeeId = existingFee.Id,
-                            Amount = existingFee.AmountPerInstallment
-                        };
-                        _context.Installments.Add(installment);
-                    }
-                }
-                else
-                {
-                    // Handle case if there is no existing fee (optional)
-                    return NotFound("Fee for the student not found.");
-                }
-            }
+            //        // Add new installments
+            //        for (int i = 0; i < existingFee.NumberOfInstallments; i++)
+            //        {
+            //            var installment = new Installment
+            //            {
+            //                FeeId = existingFee.Id,
+            //                Amount = existingFee.AmountPerInstallment
+            //            };
+            //            _context.Installments.Add(installment);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        // Handle case if there is no existing fee (optional)
+            //        return NotFound("Fee for the student not found.");
+            //    }
+            //}
 
             try
             {

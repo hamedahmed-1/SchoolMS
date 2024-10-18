@@ -158,5 +158,38 @@ namespace SchoolMS.Controllers
 
             return Ok(new { message = "Logged out successfully." });
         }
+
+        [HttpPut("edit-password/{username}")]
+        public async Task<IActionResult> EditPassword(string username, ChangePasswordDTO changePasswordDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var user = await userManager.FindByNameAsync(username);
+            if (user == null)
+            {
+                return NotFound("User not found.");
+            }
+
+            // Remove the existing password
+            var removePasswordResult = await userManager.RemovePasswordAsync(user);
+            if (!removePasswordResult.Succeeded)
+            {
+                var errors = string.Join("; ", removePasswordResult.Errors.Select(e => e.Description));
+                return BadRequest($"Error removing password: {errors}");
+            }
+
+            // Add the new password
+            var addPasswordResult = await userManager.AddPasswordAsync(user, changePasswordDto.NewPassword);
+            if (!addPasswordResult.Succeeded)
+            {
+                var errors = string.Join("; ", addPasswordResult.Errors.Select(e => e.Description));
+                return BadRequest($"Error adding new password: {errors}");
+            }
+
+            return Ok("Password updated successfully.");
+        }
     }
 }
