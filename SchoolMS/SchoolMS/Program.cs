@@ -119,19 +119,19 @@ builder.Services.Configure<WhatsAppSettings>(builder.Configuration.GetSection(na
 
 var app = builder.Build();
 
+app.UseSwagger();
+// app.UseSwaggerUI();
+app.UseSwaggerUI(c =>
+{
+    c.RoutePrefix = ""; // Serve Swagger UI at root
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API v1");
+});
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    // app.UseSwaggerUI();
-    app.UseSwaggerUI(c =>
-    {
-        c.RoutePrefix = ""; // Serve Swagger UI at root
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API v1");
-    });
+    app.UseHttpsRedirection();
 }
-
-app.UseHttpsRedirection();
 
 app.UseCors("AllowLocalhost5173");
 
