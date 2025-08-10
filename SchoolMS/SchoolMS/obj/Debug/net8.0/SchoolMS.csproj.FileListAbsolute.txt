@@ -351,7 +351,6 @@ D:\My Projects\ourSchoolMgSys\SchoolMS\SchoolMS\SchoolMS\bin\Debug\net8.0\System
 D:\My Projects\ourSchoolMgSys\SchoolMS\SchoolMS\SchoolMS\bin\Debug\net8.0\System.Runtime.Caching.dll
 D:\My Projects\ourSchoolMgSys\SchoolMS\SchoolMS\SchoolMS\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 D:\My Projects\ourSchoolMgSys\SchoolMS\SchoolMS\SchoolMS\bin\Debug\net8.0\System.Security.Permissions.dll
-D:\My Projects\ourSchoolMgSys\SchoolMS\SchoolMS\SchoolMS\bin\Debug\net8.0\System.Text.Json.dll
 D:\My Projects\ourSchoolMgSys\SchoolMS\SchoolMS\SchoolMS\bin\Debug\net8.0\System.Windows.Extensions.dll
 D:\My Projects\ourSchoolMgSys\SchoolMS\SchoolMS\SchoolMS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 D:\My Projects\ourSchoolMgSys\SchoolMS\SchoolMS\SchoolMS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
@@ -439,3 +438,7 @@ D:\My Projects\ourSchoolMgSys\SchoolMS\SchoolMS\SchoolMS\obj\Debug\net8.0\refint
 D:\My Projects\ourSchoolMgSys\SchoolMS\SchoolMS\SchoolMS\obj\Debug\net8.0\SchoolMS.pdb
 D:\My Projects\ourSchoolMgSys\SchoolMS\SchoolMS\SchoolMS\obj\Debug\net8.0\SchoolMS.genruntimeconfig.cache
 D:\My Projects\ourSchoolMgSys\SchoolMS\SchoolMS\SchoolMS\obj\Debug\net8.0\ref\SchoolMS.dll
+D:\My Projects\ourSchoolMgSys\SchoolMS\SchoolMS\SchoolMS\bin\Debug\net8.0\SchoolMS.staticwebassets.endpoints.json
+D:\My Projects\ourSchoolMgSys\SchoolMS\SchoolMS\SchoolMS\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\My Projects\ourSchoolMgSys\SchoolMS\SchoolMS\SchoolMS\obj\Debug\net8.0\staticwebassets\msbuild.SchoolMS.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\My Projects\ourSchoolMgSys\SchoolMS\SchoolMS\SchoolMS\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

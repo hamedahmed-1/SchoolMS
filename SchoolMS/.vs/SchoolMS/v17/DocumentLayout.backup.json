@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "D:\\My Projects\\ourSchoolMgSys\\SchoolMS\\SchoolMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\my projects\\ourschoolmgsys\\schoolms\\schoolms\\schoolms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|d:\\my projects\\ourschoolmgsys\\schoolms\\schoolms\\schoolms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{AA85C028-4F24-4849-AC29-60C823A3A5A7}|SchoolMS\\SchoolMS.csproj|solutionrelative:schoolms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -39,19 +35,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\My Projects\\ourSchoolMgSys\\SchoolMS\\SchoolMS\\SchoolMS\\Program.cs",
-              "RelativeDocumentMoniker": "SchoolMS\\Program.cs",
-              "ToolTip": "D:\\My Projects\\ourSchoolMgSys\\SchoolMS\\SchoolMS\\SchoolMS\\Program.cs",
-              "RelativeToolTip": "SchoolMS\\Program.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAowIIAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T10:56:50.029Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\My Projects\\ourSchoolMgSys\\SchoolMS\\SchoolMS\\SchoolMS\\appsettings.json",
               "RelativeDocumentMoniker": "SchoolMS\\appsettings.json",
@@ -64,7 +47,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "20250325212453_first.cs",
               "DocumentMoniker": "D:\\My Projects\\ourSchoolMgSys\\SchoolMS\\SchoolMS\\SchoolMS\\Migrations\\20250325212453_first.cs",
               "RelativeDocumentMoniker": "SchoolMS\\Migrations\\20250325212453_first.cs",
@@ -76,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "LoginUserDTO.cs",
               "DocumentMoniker": "D:\\My Projects\\ourSchoolMgSys\\SchoolMS\\SchoolMS\\SchoolMS\\DTO\\LoginUserDTO.cs",
               "RelativeDocumentMoniker": "SchoolMS\\DTO\\LoginUserDTO.cs",
@@ -88,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\My Projects\\ourSchoolMgSys\\SchoolMS\\SchoolMS\\SchoolMS\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "SchoolMS\\Controllers\\AccountController.cs",
@@ -100,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "RegisterUserDTO.cs",
               "DocumentMoniker": "D:\\My Projects\\ourSchoolMgSys\\SchoolMS\\SchoolMS\\SchoolMS\\DTO\\RegisterUserDTO.cs",
               "RelativeDocumentMoniker": "SchoolMS\\DTO\\RegisterUserDTO.cs",
